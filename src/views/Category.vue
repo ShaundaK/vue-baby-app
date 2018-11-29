@@ -2,7 +2,9 @@
   <div class="category">
     <h1>{{ message }}</h1>
     <div v-for="category in categories">
-      <p>name: {{ category.name }}</p>
+      <!-- links category to user with that product -->
+      <a href="html_images.asp">{{ category.name }}</a> 
+      <!-- <a v-bind:href"'/#/categories/' + category.id" class="bt btn-primary"Click here></a>   -->
     </div>
   </div>
 </template>

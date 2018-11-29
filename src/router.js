@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Category from './views/Category.vue'
+import Signup from './views/Signup.vue'
 
 Vue.use(Router)
 
@@ -22,8 +23,13 @@ export default new Router({
     },
     {
       path: '/category',
-      component: 'category',
+      name: 'category',
       component: Category
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: Signup
     }
   ]
 })

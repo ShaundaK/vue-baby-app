@@ -24,10 +24,10 @@ export default {
   },
   created: function() {
     console.log(this)
-    axios.get('http://localhost:3000/api/products').then(function(response) {
+    axios.get('http://localhost:3000/api/products/').then(function(response) {
       console.log(response.data);
       this.products = response.data
-    }.bind(this));
+    }.bind(this))
   },
 
   methods: {},
