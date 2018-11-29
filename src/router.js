@@ -4,7 +4,8 @@ import Home from './views/Home.vue'
 import Category from './views/Category.vue'
 import Signup from './views/Signup.vue'
 import Login from './views/Login.vue'
-import ProductsShow from './views/ProductsShow.vue'
+import CategoriesShow from './views/CategoriesShow.vue'
+import CategoryNursingandFeeding from './views/CategoryNursingandFeeding.vue'
 
 Vue.use(Router)
 
@@ -39,9 +40,14 @@ export default new Router({
       component: Login
     },
     {
-    path: '/products/:id',
-    name: 'productsShow',
-    component: ProductsShow
+    path: '/categories/:id',
+    name: 'categoriesShow',
+    component: CategoriesShow
+    },
+    {
+      path: '/categorynursingandfeeding',
+      name: 'categoryNursingandFeeding',
+      component: CategoryNursingandFeeding
     }
   ]
 })
