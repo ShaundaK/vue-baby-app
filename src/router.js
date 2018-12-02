@@ -5,7 +5,8 @@ import Category from './views/Category.vue'
 import Signup from './views/Signup.vue'
 import Login from './views/Login.vue'
 import CategoriesShow from './views/CategoriesShow.vue'
-import CategoryNursingandFeeding from './views/CategoryNursingandFeeding.vue'
+import User from './views/User.vue'
+
 
 Vue.use(Router)
 
@@ -45,9 +46,9 @@ export default new Router({
     component: CategoriesShow
     },
     {
-      path: '/categorynursingandfeeding',
-      name: 'categoryNursingandFeeding',
-      component: CategoryNursingandFeeding
+    path: '/user',
+    name: 'user',
+    component: User
     }
   ]
 })

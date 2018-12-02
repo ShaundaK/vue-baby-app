@@ -11,10 +11,10 @@
           <li class="nav-item active">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/about">About</a>
+            <a class="nav-link" href="/#/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/">Home</a>
+            <a class="nav-link" href="/#/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#/category">Category</a>
@@ -23,20 +23,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#/login">Login</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Auth
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Signup</a>
-              <a class="dropdown-item" href="#">Login</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

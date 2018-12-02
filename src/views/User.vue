@@ -1,15 +1,14 @@
 <template>
-  <div class="category">
+  <div class="user">
     <h1>{{ message }}</h1>
     <div class="container">
       <div class="row">
-        <div class="col-sm-4" v-for="category in categories">
+        <div class="col-sm-4" v-for="user in users">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Name: {{ category.name }}</h5>
+              <h5 class="card-title">{{ user.summary}}</h5>
               <!-- <img v-bind:src="category.image_url" width="100px"> -->
-              <a v-bind:href="'/#/categories/' + category.id" class="btn btn-primary">Go somewhere</a>
-              <!-- <a href="/show.html" class="btn btn-primary">Go somewhere</a> -->
+              <a v-bind:href="'/#/users/' + user.id" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -26,15 +25,15 @@ var axios = require('axios');
 export default {
   data: function() {
     return {
-      message: "Categories",
-      categories: [],
+      message: "Users",
+      users: [],
     };
   },
   created: function() {
     console.log(this)
-    axios.get('http://localhost:3000/api/categories').then(function(response) {
+    axios.get('http://localhost:3000/api/users').then(function(response) {
       console.log(response.data);
-      this.categories = response.data
+      this.users = response.data
     }.bind(this));
   },
 
