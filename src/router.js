@@ -1,3 +1,4 @@
+
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
@@ -6,6 +7,9 @@ import Signup from './views/Signup.vue'
 import Login from './views/Login.vue'
 import CategoriesShow from './views/CategoriesShow.vue'
 import User from './views/User.vue'
+import UsersShow from './views/UsersShow.vue'
+import Product from './views/Product.vue'
+
 
 
 Vue.use(Router)
@@ -41,14 +45,24 @@ export default new Router({
       component: Login
     },
     {
-    path: '/categories/:id',
-    name: 'categoriesShow',
-    component: CategoriesShow
+      path: '/categories/:id',
+      name: 'categoriesShow',
+      component: CategoriesShow
     },
     {
-    path: '/user',
-    name: 'user',
-    component: User
+      path: '/user',
+      name: 'user',
+      component: User
+    },
+    {
+      path: '/users/:id',
+      name: 'usersShow',
+      component: UsersShow
+    },
+    {
+      path: '/product',
+      name: 'product',
+      component: Product
     }
   ]
 })
