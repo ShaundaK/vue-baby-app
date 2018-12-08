@@ -11,18 +11,21 @@
           <li class="nav-item active">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/user">Home</a>
+            <a class="nav-link" href="/#/">Home</a>
+          </li>
+          <a class="nav-link" href="/#/signup">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#/login">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/category">Category</a>
-          </li>
-            <a class="nav-link" href="/#/signup">Signup</a>
+            <a class="nav-link" href="/#/user">User</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/login">Login</a>
+            <a class="nav-link" href="/#/category">Category</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

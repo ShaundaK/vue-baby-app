@@ -9,6 +9,7 @@ import CategoriesShow from './views/CategoriesShow.vue'
 import User from './views/User.vue'
 import UsersShow from './views/UsersShow.vue'
 import Product from './views/Product.vue'
+import ProductsShow from './views/ProductsShow.vue'
 
 
 
@@ -63,6 +64,11 @@ export default new Router({
       path: '/product',
       name: 'product',
       component: Product
+    },
+    {
+      path: '/products/:id',
+      name: 'productsShow',
+      component: ProductsShow 
     }
   ]
 })

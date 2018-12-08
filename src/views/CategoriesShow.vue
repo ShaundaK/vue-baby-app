@@ -6,13 +6,16 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title"> {{ category.name }}</h5>
-              <!-- <img v-bind:src="category.image_url" width="100px"> -->
-              <a href="http://localhost:8080/#/users/2">{{category.products[0]["description"]}}</a>
+              <div class="card-body">
+              <h5 class="card-title"> {{ product.user }}</h5>
+              <a v-bind:href="'/#/users/' + user.id" class="btn btn-primary">{{category.products[0]["description"]}}</a>
+             </div>
             </div>
           </div>
         </div>
-      </div>
+     </div>
     </div>
+  </div>
 </template>
 
 <style>
@@ -24,7 +27,9 @@ export default {
   data: function() {
     return {
       message: "",
-      category: {}
+      category: {},
+      product: {},
+      user: {}
     };
   },
   created: function() {
@@ -32,6 +37,18 @@ export default {
     axios.get('http://localhost:3000/api/categories/' + this.$route.params.id).then(response => {
       console.log(response.data);
       this.category = response.data;
+    })
+
+    console.log(this);
+    axios.get('http://localhost:3000/api/products/' + this.$route.params.id).then(response => {
+      console.log(response.data);
+      this.product = response.data;
+    })
+
+    console.log(this);
+    axios.get('http://localhost:3000/api/users/' + this.$route.params.id).then(response => {
+      console.log(response.data);
+      this.user = response.data;
     })
   },
   methods: {},
