@@ -3,19 +3,22 @@
     <h1>{{ message }}</h1>
     <div class="container">
       <div class="row">
+        <div class="col-sm-4" v-for=" product in category.products ">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title"> {{ category.name }}</h5>
+              {{ product.name}}
+              {{ product.description}}
+              <!-- p {{ product }} -->
               <div class="card-body">
-              <h5 class="card-title"> {{ product.user }}</h5>
-              <a v-bind:href="'/#/users/' + user.id" class="btn btn-primary">{{category.products[0]["description"]}}</a>
+             <a v-bind:href="'/#/products/' + product.id" class="btn btn-primary">click here</a>
              </div>
             </div>
           </div>
         </div>
+        </div>
+      </div>
      </div>
     </div>
-  </div>
 </template>
 
 <style>
@@ -27,9 +30,9 @@ export default {
   data: function() {
     return {
       message: "",
-      category: {},
-      product: {},
-      user: {}
+      category: [],
+      product: [],
+      user: []
     };
   },
   created: function() {
@@ -37,18 +40,6 @@ export default {
     axios.get('http://localhost:3000/api/categories/' + this.$route.params.id).then(response => {
       console.log(response.data);
       this.category = response.data;
-    })
-
-    console.log(this);
-    axios.get('http://localhost:3000/api/products/' + this.$route.params.id).then(response => {
-      console.log(response.data);
-      this.product = response.data;
-    })
-
-    console.log(this);
-    axios.get('http://localhost:3000/api/users/' + this.$route.params.id).then(response => {
-      console.log(response.data);
-      this.user = response.data;
     })
   },
   methods: {},

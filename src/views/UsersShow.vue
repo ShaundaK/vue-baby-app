@@ -1,19 +1,28 @@
 <template>
-  <div class="usersshow">
+ <div class="usersshow">
+  <div class="form-group">
     <h1>{{ message }}</h1>
-    <div class="container">
-      <div class="row">
-          <div class="card">
+      <div class="container">
+        <div class="row">
+           <div class="card">
+            <!-- <div class="col-sm-4" v-for="user in users"> -->
             <div class="card-body">
               <h5 class="card-title"> {{ user.first_name }}</h5>
+              <h5 class="card-title"> {{ user.last_name }}</h5>
               <h5 class="card-title"> {{ user.email }}</h5>
+              <h5 class="card-title"> {{ user.phone_number }}</h5>
+              <h5 class="card-title"> {{ user.zipcode }}</h5>
               <h5 class="card-title"> {{ user.summary }}</h5>
-              <!-- <img v-bind:src="category.image_url" width="100px"> -->
+              <textarea class="form-control" id="inputtext" placeholder="Write your message here...">Write your message here...</textarea>
+              <input class="btn btn-primary" type="submit" value="Submit">
+             </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+       </div>
+     </div>
+  </form>
 </template>
 
 <style>
@@ -25,7 +34,7 @@ export default {
   data: function() {
     return {
       message: "",
-      user: {}
+      user: []
     };
   },
   created: function() {
