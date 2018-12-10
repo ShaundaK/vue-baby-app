@@ -8,18 +8,18 @@
         </ul>
         <div class="form-group">
           <label>Username:</label> 
-          <input type="text" class="form-control" v-model="username">
+          <input type="text" class="form-control" v-model="user.username">
         </div>
         <div class="form-group">
           <label>Phone Number:</label>
-          <input type="text" class="form-control" v-model="phone_number">
+          <input type="text" class="form-control" v-model="user.phone_number">
            <div class="form-group">
           <label>Summary:</label>
-          <input type="text" class="form-control" v-model="summary">
+          <input type="text" class="form-control" v-model="user.summary">
         </div>
          <div class="form-group">
           <label>Zipcode:</label>
-          <input type="text" class="form-control" v-model="zipcode">
+          <input type="text" class="form-control" v-model="user.zipcode">
         </div>
         </div>
         <input type="submit" class="btn btn-primary" value="Submit">
@@ -34,10 +34,7 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      username: "",
-      phone_number: "",
-      summary: "",
-      zipcode: "",
+      user: {},
       errors: []
     };
   },
