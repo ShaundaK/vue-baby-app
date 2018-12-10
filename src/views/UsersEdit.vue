@@ -41,15 +41,15 @@ export default {
   methods: {
     submit: function() {
       var params = {
-        name: this.name,
-        email: this.email,
-        password: this.password,
-        password_confirmation: this.passwordConfirmation
+        input_username: this.user.username,
+        input_phone_number: this.user.phone_number,
+        input_summary: this.user.summary,
+        input_zipcode: this.user.zipcode
       };
       axios
-        .post("http://localhost:3000/api/users", params)
+        .patch("http://localhost:3000/api/users/" + this.$route.params.id, params)
         .then(response => {
-          this.$router.push("/login");
+          this.$router.push("/users/" + this.$route.params.id);
         })
         .catch(error => {
           this.errors = error.response.data.errors;
