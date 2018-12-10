@@ -10,7 +10,7 @@ import User from './views/User.vue'
 import UsersShow from './views/UsersShow.vue'
 import Product from './views/Product.vue'
 import ProductsShow from './views/ProductsShow.vue'
-
+import UsersEdit from './views/UsersEdit.vue'
 
 
 Vue.use(Router)
@@ -58,7 +58,7 @@ export default new Router({
     {
       path: '/users/:id',
       name: 'usersShow',
-      component: UsersShow
+      component: UsersShow,
     },
     {
       path: '/product',
@@ -69,6 +69,11 @@ export default new Router({
       path: '/products/:id',
       name: 'productsShow',
       component: ProductsShow 
+    },
+    {
+      path: '/users/:id/edit',
+      name: 'usersEdit',
+      component: UsersEdit
     }
   ]
 })

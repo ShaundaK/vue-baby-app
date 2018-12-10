@@ -5,17 +5,15 @@
       <div class="row">
         <div class="card">
           <div class="card-body">
-            <!-- <div class="col-sm-4" v-for="product in products"> -->
-              <!-- <h5 class="card-title"> {{ product.user }}</h5> -->
-               <h5 class="card-title"> {{ product.name }}</h5>
+               <h5 class="card-title"> {{ product.user.first_name }}</h5>
+                <h5 class="card-title"> {{ product.name }}</h5>
                 <h5 class="card-title"> {{ product.description }}</h5>
-                <!-- <h5 class="card-title"> {{ product.user }}</h5> -->
-                <h5 class="card-title"> {{ product.user.first_name }}</h5>
-              <!-- <img v-bind:src="category.image_url" width="100px"> -->
-            <!-- </div> -->
+                 <div class="card-body">
+                <a v-bind:href="'/#/users/' + user.id" class="btn btn-primary">Go somewhere</a>
           </div>
          </div>
         </div>
+      </div>
       </div>
     </div>
 </template>
@@ -29,8 +27,8 @@ export default {
   data: function() {
     return {
       message: "One Product",
-      product: [],
-      users: []
+      user: [],
+      product: []
     };
   },
   created: function() {

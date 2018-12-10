@@ -5,7 +5,6 @@
       <div class="container">
         <div class="row">
            <div class="card">
-            <!-- <div class="col-sm-4" v-for="user in users"> -->
             <div class="card-body">
               <h5 class="card-title"> {{ user.first_name }}</h5>
               <h5 class="card-title"> {{ user.last_name }}</h5>
@@ -16,12 +15,12 @@
               <textarea class="form-control" id="inputtext" placeholder="Write your message here...">Write your message here...</textarea>
               <input class="btn btn-primary" type="submit" value="Submit">
              </div>
-            </div>
+           </div>
           </div>
         </div>
       </div>
-       </div>
      </div>
+    </div>
   </form>
 </template>
 

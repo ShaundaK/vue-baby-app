@@ -9,7 +9,7 @@
               <h5 class="card-title">Name: {{ product.name }}</h5>
               <h5 class="card-title">Description: {{ product.description }}</h5>
               <div class="card-body">
-              <h5 class="card-title">User: {{ product.user }}</h5>
+              <!-- <h5 class="card-title">User: {{ product.user }}</h5 --><!-- > -->
              <a v-bind:href="'/#/products/' + product.id" class="btn btn-primary">go somewhere</a>
             </div>
           </div>
