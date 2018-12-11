@@ -30,7 +30,7 @@ var axios = require('axios');
 export default {
   data: function() {
     return {
-      message: "Category Page!",
+      message: "",
       categories: [],
     };
   },
