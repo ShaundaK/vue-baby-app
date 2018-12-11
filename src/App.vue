@@ -19,13 +19,13 @@
             <a class="nav-link" href="/#/login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/about">About</a>
+            <a class="nav-link" href="/#/product">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/user">User</a>
+            <a class="nav-link" href="/#/category">Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#/category">Category</a>
+            <a class="nav-link" href="/#/user">Find People</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
