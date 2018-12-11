@@ -11,7 +11,7 @@
                 <!-- Link-->
                 <li class="sidebar-item"><a href="index.html" class="sidebar-link active">Home</a></li>
                 <!-- Link-->
-                <li class="sidebar-item"><a href="about.html" class="sidebar-link">About</a></li>
+                <li class="sidebar-item"><a href="/#/signup" class="sidebar-link active">Signup</a></li>
                 <!-- Link-->
                 <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Get in touch</a></li>
             </ul>
