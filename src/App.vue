@@ -13,7 +13,8 @@
                 <!-- Link-->
                 <li class="sidebar-item"><a href="/#/signup" class="sidebar-link active">Signup</a></li>
                 <!-- Link-->
-                <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Get in touch</a></li>
+                <li class="sidebar-item"><a href="/#/login"
+                  class="sidebar-link">Login</a></li>
             </ul>
             <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
             <div class="copyright text-center text-md-left">
