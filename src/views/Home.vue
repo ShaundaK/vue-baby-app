@@ -6,7 +6,7 @@
         <!--   *** SIDEBAR ***-->
         <!--   *** SIDEBAR END ***  -->
         <!--   *** PORTFOLIO ***-->
-        <div class="col-md-8 col-lg-9 content-column">
+<!--         <div class="col-md-8 col-lg-9 content-column">
           <div class="grid row">
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/a4-paper.jpg" alt="" class="img-fluid"></a>
@@ -27,18 +27,18 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item"> 
+            </div> -->
+            <div class="col-md-6 col-lg-3 grid-item" v-for="category in categories"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
-                  <h4> <a href="detail.html">Name of the work 3</a></h4>
+                  <h4> <a href="detail.html"> {{ category.name}} </a></h4>
                   <div class="box-masonry-desription">
                     <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 grid-item"> 
+            <!-- <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> 
                 <div class="box-masonry-text"> 
                   <h4> <a href="detail.html">Item without image</a></h4>
@@ -119,7 +119,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--   *** PORTFOLIO END ***-->
       </div>
     </div>
