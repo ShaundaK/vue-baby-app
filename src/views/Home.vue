@@ -29,7 +29,7 @@
               </div>
             </div> -->
             <div class="col-md-6 col-lg-3 grid-item" v-for="category in categories"> 
-              <div class="box-masonry"> <a v-bind:href="'/#/categories/' + category.id" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
+              <div class="box-masonry"> <a v-bind:href="'/#/categories/' + category.id" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img :src="category.image" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
                   <h4> <a v-bind:href="'/#/categories/' + category.id"> {{ category.name }} </a></h4>
                 </div>
