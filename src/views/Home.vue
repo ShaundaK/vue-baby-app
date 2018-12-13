@@ -29,9 +29,9 @@
               </div>
             </div> -->
             <div class="col-md-6 col-lg-3 grid-item" v-for="category in categories"> 
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
+              <div class="box-masonry"> <a v-bind:href="'/#/categories/' + category.id" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
-                  <h4> <a href="detail.html"> {{ category.name}} </a></h4>
+                  <h4> <a href="detail.html"> {{ category.name }} </a></h4>
                   <div class="box-masonry-desription">
                     <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
                   </div>
