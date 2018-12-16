@@ -35,7 +35,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md-6 col-lg-3 grid-item"> 
+          <!--   <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> 
                 <div class="box-masonry-text"> 
                   <h4> <a href="detail.html">Item without image</a></h4>
@@ -44,8 +44,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3 grid-item"> 
+            </div> -->
+            <!-- <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/business-card.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
                   <h4>Name of the work 5</h4>
@@ -110,13 +110,13 @@
                 <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
                   <h4>Item with image</h4>
                   <div class="box-masonry-desription">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         <!--   *** PORTFOLIO END ***-->
       </div>
     </div>

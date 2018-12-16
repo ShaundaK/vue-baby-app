@@ -5,16 +5,13 @@
         <div class="row">
           <div class="card">
             <div class="card-body">
-                <p><h5 class="card-title"> {{ product.user.first_name }}</h5></p>
-                <p><h5 class="card-title">{{ product.name }}</h5></p>
-                <p><h5 class="card-title"> {{ product.description }}
-                </h5></p>
-                <p><h5 class="card-title"> {{ product.user.email }}</h5></p>
-                <p><h5 class="card-title"> {{ product.user.summary }}</h5></p>
+                 <p><h5 class="card-title"> {{ product.user["first_name"] }} </h5></p>
+                <p><h5 class="card-title"> {{ product.user["email"] }}</h5></p>
+                <p><h5 class="card-title"> {{ product.user["summary"] }}</h5></p>
                 <textarea class="form-control" id="inputtext" placeholder="Write your message here...">Write your message here...</textarea>  
                 <input class="btn btn-primary" type="submit" value="Submit">
              </div>
-           </div>
+          </div>
          </div>
        </div>
     </div>
@@ -28,7 +25,7 @@
 export default {
   data: function() {
     return {
-      message: "One Product",
+      message: "",
       user: [],
       product: []
     };
@@ -38,8 +35,9 @@ export default {
     axios.get('http://localhost:3000/api/products/' + this.$route.params.id).then(response => {
       console.log(response.data);
       this.product = response.data;
-    })
+    });
   },
+
   methods: {},
   computed: {}
 };
