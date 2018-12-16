@@ -12,6 +12,7 @@ import Product from './views/Product.vue'
 import ProductsShow from './views/ProductsShow.vue'
 import UsersEdit from './views/UsersEdit.vue'
 import Map from './views/Map.vue'
+import Rate from 'vue-rate'
 
 
 Vue.use(Router)
@@ -80,6 +81,6 @@ export default new Router({
       path: '/map',
       name: 'map',
       component: Map
-    }
+    },
   ]
 })

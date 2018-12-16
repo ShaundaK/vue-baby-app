@@ -7,6 +7,7 @@
             <div class="card-body">
                  <p><h5 class="card-title"> {{ product.user["first_name"] }} </h5></p>
                 <p><h5 class="card-title"> {{ product.user["email"] }}</h5></p>
+                <p><h5 class="card-title"> {{ product.user["zipcode"] }}</h5></p>
                 <p><h5 class="card-title"> {{ product.user["summary"] }}</h5></p>
                 <textarea class="form-control" id="inputtext" placeholder="Write your message here...">Write your message here...</textarea>  
                 <input class="btn btn-primary" type="submit" value="Submit">
@@ -27,7 +28,7 @@ export default {
     return {
       message: "",
       user: [],
-      product: []
+      product: {user: {}}
     };
   },
   created: function() {
