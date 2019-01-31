@@ -7,7 +7,7 @@
            <div class="card">
             <div class="card-body">
               <h5 class="card-title"> {{ user.first_name }}</h5>
-              <h5 class="card-title"> {{ user.last_name }}</h5>
+              <!-- <h5 class="card-title"> {{ user.last_name }}</h5> -->
               <h5 class="card-title"> {{ user.email }}</h5>
               <h5 class="card-title"> {{ user.phone_number }}</h5>
               <h5 class="card-title"> {{ user.zipcode }}</h5>

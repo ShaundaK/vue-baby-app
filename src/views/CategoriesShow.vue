@@ -7,8 +7,8 @@
           <div class="card">
             <div class="card-body">
               <p>{{ product.name}}</p>
-              <p>{{ product.description}}</p>
-              <p><a v-bind:href="'/#/products/' + product.id" class="btn btn-primary">go somewhere</a></p>
+              <!-- <p>{{ product.description}}</p> -->
+              <p><a v-bind:href="'/#/products/' + product.id" class="btn btn-primary">Let's See!</a></p>
               <!-- p {{ product }} -->
              </div>
             </div>
