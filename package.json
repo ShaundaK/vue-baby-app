@@ -5,9 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
-  },"scripts": {
-  "postinstall": "ng build"
-},
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4",
